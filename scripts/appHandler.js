@@ -1,9 +1,13 @@
+const c = require('chalk')
 
 module.exports = class AppHandler {
     constructor (app) {
         this._app = app
 
-        if (typeof this.app !== 'function') console.log(`${c.bgRedBright(' ✕ (ERROR) ')} Can not create server! Application is an invalid type`)
+        if (typeof this._app !== 'function') {
+            console.error(`\t${c.bgRedBright(' ✕ (ERROR) ')} Can not create server! Application is an invalid type`)
+            process.exit(1)
+        }
 
         this._http = require('http')
 
