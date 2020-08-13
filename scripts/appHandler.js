@@ -3,7 +3,7 @@ module.exports = class AppHandler {
     constructor (app) {
         this._app = app
 
-        if (!typeof this.app == 'function') console.log(`${c.bgRedBright(' ✕ (ERROR) ')} Can not create server! Application is an invalid type`)
+        if (typeof this.app !== 'function') console.log(`${c.bgRedBright(' ✕ (ERROR) ')} Can not create server! Application is an invalid type`)
 
         this._http = require('http')
 
