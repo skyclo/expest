@@ -1,6 +1,6 @@
 {
   "name": "expest",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "An Express/HTTP Server oriented Node.js testing framework",
   "main": "./bin/cli.js",
   "bin": "./bin/cli.js",
