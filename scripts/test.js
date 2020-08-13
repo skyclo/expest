@@ -11,6 +11,8 @@ global.group = async function (descr, funct) {
     }
 }
 
+global.describe = group
+
 global.it = async function (descr, funct) {
     try {
         if (!descr || !funct) throw console.error(`\t\tExpest: ${c.bgYellow(' ⚠ (WARN) ')} Invalid test`)
