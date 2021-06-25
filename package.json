@@ -6,7 +6,7 @@
   "bin": "./bin/cli.js",
   "dependencies": {
     "chalk": "^4.1.0",
-    "commander": "^7.2.0"
+    "commander": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {},
